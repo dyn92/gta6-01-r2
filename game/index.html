@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palmshade Heat — a tiny open-world crime game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="view" width="1280" height="720"></canvas>
+  <div id="hud">
+    <div id="cash">$0</div>
+    <div id="stars"></div>
+    <div id="mission"></div>
+    <div id="hint">WASD / arrows move &nbsp;·&nbsp; E enter or leave a car &nbsp;·&nbsp; P pause &nbsp;·&nbsp; Shift sprint</div>
+  </div>
+  <canvas id="map" width="180" height="140"></canvas>
+  <div id="overlay">
+    <h1>PALMSHADE HEAT</h1>
+    <p class="tag">One driver. One hot little port city. Every fare is a risk.</p>
+    <p class="story">You are Nia Sol, a dockside courier who owes the wrong people money.
+    Run pickup-and-drop fares across Palmshade, keep the heat off your tail,
+    and stack enough cash to buy your way out of the bay.</p>
+    <button id="startBtn">START ENGINE</button>
+    <p class="keys">WASD / arrows — move &amp; drive · E — car · Space — handbrake · P — pause</p>
+  </div>
+  <div id="endcard" class="hidden">
+    <h1 id="endTitle">BUSTED</h1>
+    <p id="endText"></p>
+    <button id="againBtn">TRY AGAIN</button>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
